@@ -47,5 +47,16 @@ export const config = {
       maxResponseTokens: parseInt(process.env.MAX_RESPONSE_TOKENS || '1024'),
       similaritySearchResults: parseInt(process.env.SIMILARITY_SEARCH_RESULTS || '5'),
     },
+
+    // WhatsApp settings
+    meta: {
+      appId: process.env.META_APP_ID || '',
+      appSecret: process.env.META_APP_SECRET || '',
+      whatsappAuthConfig: process.env.META_APP_CONFIG_ID || '',
+      redirectUri: process.env.META_REDIRECT_URI || 'http://localhost:3000/',
+      apiVersion: process.env.META_API_VERSION || 'v18.0',
+      webhookUrl: process.env.META_WEBHOOK_URL || '',
+      webhookVerifyToken: process.env.META_WEBHOOK_VERIFY_TOKEN || ''
+    }
   },
 };

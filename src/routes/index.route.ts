@@ -4,6 +4,7 @@ import { Router } from 'express';
 import authRoutes from './auth.route.js';
 import chatRoutes from './chat.route.js';
 import documentRoutes from './document.route.js';
+import whatsapproutes from './whatsapp.route.js';
 // Import other route modules as needed
 
 const router = Router();
@@ -12,6 +13,7 @@ const router = Router();
 router.use('/auth', authRoutes);
 router.use('/chat', chatRoutes);
 router.use('/document', documentRoutes);
+router.use('/whatsapp', whatsapproutes);
 // Mount other route modules
 // router.use('/users', userRoutes);
 // router.use('/other-resource', otherResourceRoutes);
