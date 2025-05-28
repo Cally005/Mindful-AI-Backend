@@ -8,8 +8,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // Your Supabase credentials
-const supabaseUrl = process.env.SUPABASE_URL || 'https://nrohcrnoazrudrhfetse.supabase.co';
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5yb2hjcm5vYXpydWRyaGZldHNlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0Mjc0MDM0NSwiZXhwIjoyMDU4MzE2MzQ1fQ.4u3Hlnm-pvaeJIh4hVARdMkZn0qInqPrMrR5tWWz6hk';
+const supabaseUrl = process.env.SUPABASE_URL 
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY 
 
 if (!supabaseUrl || !supabaseServiceKey) {
   console.error('❌ Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in environment variables');
