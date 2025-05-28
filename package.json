@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predev": "tsc",
-    "dev": "npx tsc -w nodemon server.ts",
+    "dev": "tsc -w & nodemon dist/server.js",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "postinstall": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -42,7 +43,8 @@
     "pdf-parse": "^1.1.1",
     "redis": "^4.7.0",
     "uuid": "^11.1.0",
-    "word-extractor": "^1.0.4"
+    "word-extractor": "^1.0.4",
+    "typescript": "^5.7.3"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
@@ -54,7 +56,6 @@
     "@types/multer": "^1.4.12",
     "@types/node": "^22.13.0",
     "nodemon": "^3.1.9",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "ts-node": "^10.9.2"
   }
 }
